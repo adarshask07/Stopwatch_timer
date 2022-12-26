@@ -1,0 +1,24 @@
+.wrapper {
+background: cadetblue;
+padding: 9vw;
+text-align: center;
+}
+.buttons{
+  border-radius: 20%;
+  
+}
+.btn , btn-primary{
+  margin: 1vw;
+}
+h1{
+  font-size: 4vw;
+}
+.Time{
+  font-size: 70px;
+}
+
+.badge , badge-dark {
+  background-color: black;
+  margin: 20px;
+  font-size: larger;
+}

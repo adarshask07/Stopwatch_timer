@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="Timer.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1>Timer</h1>
+
+        <h2>JavaScript Timer</h2>
+        <h3>Please enter your time</h3>
+
+
+        <label for="hrs_user"><span class="badge badge-dark">Hours</span><input type="number" id="hrs_user" name="hrs_user" class="form-control text-center" min="0" oninput="validity.valid||(value='');"></label>
+        <label for="min_user"><span class="badge badge-dark">Minutes</span><input type="number" id="min_user" name="min_user" class="form-control text-center" min="0" oninput="validity.valid||(value='');"></label>
+       
+        <button id="button-submit" type="submit" class="btn btn-primary" onclick="get()">Submit</button>
+        <h2 id="instructions">Please Enter Your Time And Click Submit</h2>
+
+
+        <p><span id="hrs" class="Time">00:00</span></p>
+
+
+        <button id="button-start" type="button" class="btn btn-primary"onclick="start_timer()">Start</button>
+
+        <button id="button-Stop" type="button" class="btn btn-primary" onclick="Stop_timer()">Stop</button>
+    </div>
+    <div class="btn-group text-center" >
+        <a href="/index.html" class="btn btn-primary active text-center" aria-current="page">Home</a>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="Timer.js"></script>
+</body>
+
+
+
+</html>
